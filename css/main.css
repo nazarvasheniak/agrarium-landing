@@ -1006,6 +1006,7 @@ body{
     align-items: flex-start;
     margin-right: 30px;
     flex-shrink: 0;
+    transition: 0.5s;
 }
 .card_slide_block .card .month{
     color: #cccccc;
