@@ -283,7 +283,6 @@ textarea {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
@@ -292,23 +291,23 @@ textarea {
 
 @font-face {
     font-family: 'SF-UI-Display-regular';
-    src: url('../fonts/SF-UI-DISPLAY-REGULAR.ttf')  format('truetype'); 
+    src: url('../fonts/SF-UI-Display-Regular.otf')  format('opentype'); 
 }   
 @font-face {
     font-family: 'SF-UI-Display-Bold';
-    src: url('../fonts/SF-UI-DISPLAY-Bold.ttf')  format('truetype'); 
+    src: url('../fonts/SF-UI-Display-Bold.otf')  format('opentype'); 
 }   
 @font-face {
     font-family: 'SF-UI-Display-Light';
-    src: url('../fonts/SF-UI-DISPLAY-Light.ttf')  format('truetype'); 
+    src: url('../fonts/SF-UI-Display-Light.otf')  format('opentype'); 
 }   
 @font-face {
     font-family: 'SF-UI-Display-Heavy';
-    src: url('../fonts/SF-UI-DISPLAY-heavy.ttf')  format('truetype'); 
+    src: url('../fonts/SF-UI-Display-Heavy.otf')  format('opentype'); 
 }   
 @font-face {
     font-family: 'SF-UI-Display-Medium';
-    src: url('../fonts/SF-UI-DISPLAY-medium.ttf')  format('truetype'); 
+    src: url('../fonts/SF-UI-Display-Medium.otf')  format('opentype'); 
 }   
 
 
@@ -422,7 +421,7 @@ body{
     display: block;
     height: 32px;
     width: 123px;
-    font-size: 12px;
+    font-size: 10px;
     border-radius: 4px;
     background-image: -moz-linear-gradient( 90deg, rgb(51,0,204) 0%, rgb(102,0,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(51,0,204) 0%, rgb(102,0,255) 100%);
@@ -430,12 +429,13 @@ body{
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     margin-right: 19px;
     font-family: 'SF-UI-Display-Bold';
+    text-transform: uppercase;
 }
 .main_block .top_content .content_wrap header .btn_groups .enter{
     display: block;
     height: 32px;
     width: 92px;
-    font-size: 12px;
+    font-size: 10px;
     border: 1px solid rgba(255, 255, 255, .1);
     border-radius: 4px;
     background: url(../img/sign-in.svg) no-repeat 15px 50%;
@@ -443,6 +443,7 @@ body{
     padding-left: 42px;
     text-align: left;
     font-family: 'SF-UI-Display-Bold';
+    text-transform: uppercase;
 }
 
 
@@ -570,10 +571,9 @@ body{
     height: 81px;
     border-radius: 6px;
     padding-left: 74px;
-    padding: 16px 0 16px 74px;
+    padding: 18px 0 18px 74px;
     position: relative;
 }
-  
 .bottom_content .cost_block .items .item1{
     background-image: -moz-linear-gradient( 90deg, rgb(51,0,204) 0%, rgb(102,0,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(51,0,204) 0%, rgb(102,0,255) 100%);
@@ -605,7 +605,7 @@ body{
 .bottom_content .cost_block .items .item .value{
     font-size: 30px;
     line-height: 0.9;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
 }
 .bottom_content .cost_block .items .item .text{
     line-height: 0.9;
@@ -668,7 +668,7 @@ body{
 }
 
 .bottom_content .how_work{
-    margin-top: 163px;
+    margin-top: 158px;
     position: relative;
 }
 .bottom_content .how_work:before{
@@ -1006,6 +1006,7 @@ body{
     align-items: flex-start;
     margin-right: 30px;
     flex-shrink: 0;
+    transition: 0.5s;
 }
 .card_slide_block .card .month{
     color: #cccccc;
@@ -1216,12 +1217,14 @@ body{
     background-image: -moz-linear-gradient( 90deg, rgb(51,0,204) 0%, rgb(102,0,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(51,0,204) 0%, rgb(102,0,255) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(51,0,204) 0%, rgb(102,0,255) 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     margin-right: 15px;
 }
 .absolute_block .item2{
     background-image: -moz-linear-gradient( 111deg, rgb(255,0,66) 0%, rgb(204,0,139) 100%);
     background-image: -webkit-linear-gradient( 111deg, rgb(255,0,66) 0%, rgb(204,0,139) 100%);
     background-image: -ms-linear-gradient( 111deg, rgb(255,0,66) 0%, rgb(204,0,139) 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
 }
 .absolute_block .garant_text{
     color: #a3a8ea;
@@ -1230,10 +1233,6 @@ body{
     line-height: 0.9;
     margin: 25px auto 0;
 }
-
-
-
-
 
 
 
@@ -1276,7 +1275,7 @@ body{
     font-size: 30px;
     font-family: 'SF-UI-Display-Bold';
     left:calc(50% - 202px);
-    top: -80px;
+    top: -96px;
     z-index: 3;
 }
 .forecast_block .graph{
@@ -1302,8 +1301,8 @@ body{
 .forecast_block .team_block .title_block .title{
     text-align: center;
     font-family: 'SF-UI-Display-Bold';
-    font-size: 24px;
-    margin-top: 31px;
+    font-size: 30px;
+    margin-top: 18px;
 }
 .forecast_block .team_block .title_block img{
     width: 126px;
@@ -1468,11 +1467,14 @@ footer .soc_icon img{
     .triggers_block .items .item{
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
         background: #fff;
-        height: 330px;
+        height: 300px;
         width: 280px;
         margin-bottom: 100px;
         padding: 72px 40px 0;
         border-radius: 6px;
+    }
+    .triggers_block .items .item3{
+        height: 330px;
     }
     .triggers_block .items .item3,
     .triggers_block .items .item4{
@@ -1481,7 +1483,7 @@ footer .soc_icon img{
 }
 @media screen and (max-width: 1260px){
     .main_block .top_content .content_wrap{
-        padding: 28px 57px;
+        padding: 40px 57px 28px;
     }
 }
 @media screen and (max-width: 1200px){
@@ -1587,7 +1589,7 @@ footer .soc_icon img{
     .forecast_block .graph{
         left: 0;
         margin: auto;
-        width: 80%;
+        width: 86%;
     }
     .bottom_content .how_work{
         margin-top: 115px;
@@ -1600,6 +1602,29 @@ footer .soc_icon img{
     }   
 }
 @media screen and (max-width: 768px){
+    footer .comp_info{
+        max-width: 325px;
+    }
+    .forecast_block .consultants_block{
+        margin: 87px auto 58px;
+    }
+    .forecast_block .consultants_block .title_block img{
+        width: 126px;
+        height: 126px;
+        margin: 0 auto 25px;
+    }
+    .card_slide_block{
+        margin-bottom: 22px;
+    }
+    .triggers_block .items .item:before{
+        top: -33px;
+    }
+    .triggers_block .items .item:after{
+        top: -40px;
+    }
+    .main_block .top_content .content_wrap .main_text{
+        margin: 69px auto 80px;
+    }
     .econom_model .statistic .info_block .title{
         left: calc(50% - 174px);
     }
@@ -1622,6 +1647,8 @@ footer .soc_icon img{
     .main_block .top_content .content_wrap .timer_block .text{
         max-width: none;
         text-align: center;
+        font-family: 'SF-UI-Display-Bold';
+        font-size: 11px;
     }
     .timer_block .timer{
         height: 78px;
@@ -1744,6 +1771,7 @@ footer .soc_icon img{
         line-height: 31px;
         font-size: 10px;
         font-family: 'SF-UI-Display-Bold';
+        margin-bottom: 0;
     }
       
     .road_map_block .years_items .item.active .year_number{
@@ -1786,12 +1814,16 @@ footer .soc_icon img{
 @media screen and (max-width: 600px){
     .road_map_block .years_items{
         justify-content: space-between;
+        margin-bottom: 22px;
+    }
+    .card_slide_block{
+        margin-bottom: 0;
     }
     .road_map_block .years_items .item{
         margin: 0;
     }
     .card_slide_wrap{
-        padding: 40px 20px 0;
+        padding: 0 20px;
     }
     .main_block .bottom_content{
         padding: 40px 50px 0;
@@ -1803,7 +1835,7 @@ footer .soc_icon img{
         margin: 0 auto;
     }
     .main_block .top_content{
-        min-height: 610px;
+        min-height: 635px;
         background-size: cover;
     }
     .main_block .top_content .content_wrap .main_text{
@@ -1815,6 +1847,7 @@ footer .soc_icon img{
     }
     .timer_block .timer{
         padding: 0 25px;
+        height: 65px;
     }
     .timer_block .timer .timer_item:after{
         left: 110%;
@@ -1834,9 +1867,52 @@ footer .soc_icon img{
     
 }
 @media screen and (max-width: 550px){
-    
+    .econom_model .statistic .imgs_block{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .econom_model .statistic .imgs_block img:first-child{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 500px){
+    .forecast_block .forecast_title{
+        left: 35px;
+    }
+    .forecast_block:before{
+        display: none;
+    }
+    .econom_model .statistic .info_block .item{
+        position: relative;
+        padding-left: 25px;
+        font-size: 12px;
+    }
+    .econom_model .statistic .info_block .item .circle{
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 10px;
+        height: 10px;
+    }
+    .econom_model .statistic .info_block .item .procent{
+        display: none;
+    }
+    .econom_model .statistic .info_block .item .discount{
+        width: 87px;
+        height: 27px;
+        font-size: 10px;
+        line-height: 27px;
+    }
+    .econom_model .statistic .info_block .title,
+    .econom_model .statistic .info_block .undertext{
+        left: 38px;
+        line-height: normal;
+        text-align: left;
+    }
+    .road_map_block .title{
+        text-align: left;
+        margin-bottom: 30px;
+    }
     .main_block .top_content .content_wrap .btns{
         flex-direction: column;
         align-items: center;
@@ -1851,23 +1927,88 @@ footer .soc_icon img{
         text-align: left;
     }
     .main_block .bottom_content{
-        padding: 40px 20px 0;
+        padding: 34px 20px 0;
     }
     .road_map_block .years_items .item.active .number_around, 
     .road_map_block .years_items .item.active .number_wrap{
         display: none;
     }
+    .forecast_block{
+        margin-top: 360px;
+        border-top: 25px solid #f0f1ff;
+    }
+    .forecast_block .forecast_title{
+        position: static;
+        padding: 0 35px;
+        margin-bottom: 45px;
+    }
+    .absolute_block{
+        top: -315px;
+        width: 256px;
+        left: calc(50% - 128px);
+        justify-content: flex-end;
+    }
+    .forecast_block .team_block{
+        margin-top: 100px;
+    }
+    .forecast_block .team_block .title_block{
+        max-width: 128px;
+    }
+    .forecast_block .team_block .title_block img{
+        height: 65px;
+        width: 65px;
+    }
+    .absolute_block .garant_text{
+        order: 1;
+        writing-mode: tb-rl;
+        transform: rotate(180deg);
+        margin-top: 0;
+        color: #dbdfee;
+        font-family: 'SF-UI-Display-Bold';
+        line-height: normal;
+        text-transform: uppercase;
+        height: 150px;
+        text-align: left;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .absolute_block .item2{
+        order: 3;
+        margin-left: auto;
+    }
+    .absolute_block .item1{
+        order: 2;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .econom_model .statistic{
+        padding: 0 23px;
+    }
 }
 @media screen and (max-width: 450px){
+    .forecast_block{
+        
+    }
+    .forecast_block .consultants_block,
+    .forecast_block .team_block{
+        padding: 0 30px;
+    }
+    .consultants_block .consultants_cards .cons_card,
+    .forecast_block .team_block .team_people .people_card{
+        margin-right: 12px;
+    }
+    .econom_model .statistic .imgs_block .agrarium{
+        left: calc(50% - 50px);
+        top: calc(50% - 43px);
+        width: 100px;
+    }
     .bottom_content .targets .item:before{
-        left: -50px;
+        left: -42px;
     }
     .main_block .bottom_content .cost_block{
         flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .bottom_content .range_block{
-        margin: 0;
+        justify-content: center;
     }
     .bottom_content .cost_block .items{
         align-items: center;
@@ -1878,13 +2019,23 @@ footer .soc_icon img{
     .bottom_content .targets{
         order: 5;
         flex-direction: column-reverse;
+        padding-right: 0;
+        padding-left: 68px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .bottom_content .range_block{
         order: 6;
         margin-left: 40px;
         height: 433px;
         display: flex;
+        width: 30px;
+        margin: 0;
         align-items: flex-end;
+    }
+    .bottom_content .range_block .range{
+        width: 30px;
+        height: 38.6%;
     }
     .bottom_content .cost_block .items .item{
         margin-bottom: 38px;
@@ -1892,8 +2043,60 @@ footer .soc_icon img{
     .bottom_content .cost_block .items .item:last-child{
         margin-bottom: 0;
     }
+    .bottom_content .how_work:before{
+        display: none;
+    }
+    .bottom_content .how_work{
+        margin-top: 76px;
+    }
+    .bottom_content .how_work .undertext{
+        margin-bottom: 32px;
+    }
+    .triggers_block{
+        padding-top: 95px;
+    }
+    .road_map_block .title,
+    .card_slide_block .card .name{
+        color: #33424c;
+    }
+    .card_slide_wrap{
+        padding: 0 29px;
+    }
+    .econom_model .statistic .info_block .undertext{
+        font-size: 14px;
+    }
+    .econom_model .statistic .imgs_block{
+        margin-top: 22px;
+        margin-bottom: 45px;
+    }
+    .econom_model .statistic .info_block .item{
+        color: #516572;
+        height: 24px;
+    }
+    .forecast_block .team_block .title_block .title{
+        line-height: normal
+    }
+    .forecast_block .team_block .title_block{
+        margin: 0 auto 46px;
+    }
+    .forecast_block .consultants_block .title_block img{
+        width: 60px;
+        display: block;
+        margin: 0 auto 16px;
+        height: 64px;
+    }
+    .forecast_block .consultants_block .title_block{
+        margin: 0 auto 44px;
+    }
+    footer .comp_info{
+        text-align: left;
+    }
 }
 @media screen and (max-width: 425px){
+
+    .econom_model .statistic .info_block{
+        width: 100%;
+    }
     .main_block .top_content .content_wrap header .menu{
         padding-left: 84px;
         align-items: start;
@@ -1906,15 +2109,45 @@ footer .soc_icon img{
     .main_block .top_content .content_wrap .main_text .undertext{
         font-size: 18px;
     }
+    .econom_model .statistic .info_block .undertext{
+        top: -40px;
+    }
 }
 @media screen and (max-width: 400px){
-    .main_block .bottom_content .cost_block{
-        justify-content: space-between;
+    .econom_model .statistic .imgs_block .agrarium{
+        width: 82px;
+        height: 66px;
+        left: calc(50% - 41px);
+        top: calc(50% - 33px);
     }
 }
 @media screen and (max-width: 320px){
+    .forecast_block{
+        padding-top: 73px;
+    }
+    .forecast_block:before{
+        background: url(../img/top_block_mob_bg.png) no-repeat center;
+        height: 50px;
+        top: -20px;
+        transform: rotate(180deg);
+        z-index: 2;
+    }
+    .forecast_block:after{
+        display: none;
+        content: '';
+        position: absolute;
+        background: #fff;
+        height: 50px;
+        width: 100%;
+        top: -35px;
+        z-index: 0;
+        border-radius: 0 0 50% 50%;
+    }
+    .forecast_block .forecast_title{
+        position: static;
+    }
     .main_block .top_content{
-        background-size: auto;
+        /* background-size: auto; */
     }
     .main_block .top_content{
         position: relative;
