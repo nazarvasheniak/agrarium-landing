@@ -154,25 +154,25 @@
             <div class="road_map_block">
                 <div class="title">Дорожная карта</div>
                 <div class="years_items">
-                    <div class="item item1">
+                    <div class="item item1" data-toggle="tab" data-target="item1">
                         <div class="year_number">2015</div>
                         <div class="number_wrap"></div>
                         <div class="number_around"></div>
                         <div class="number">1</div>
                     </div>
-                    <div class="item item2">
+                    <div class="item item2" data-toggle="tab" data-target="item2">
                         <div class="year_number">2016</div>
                         <div class="number_wrap"></div>
                         <div class="number_around"></div>
                         <div class="number">2</div>
                     </div>
-                    <div class="item item3 active">
+                    <div class="item item3 active" data-toggle="tab" data-target="item3">
                         <div class="year_number">2017</div>
                         <div class="number_wrap"></div>
                         <div class="number_around"></div>
                         <div class="number">3</div>
                     </div>
-                    <div class="item item4">
+                    <div class="item item4" data-toggle="tab" data-target="item4">
                         <div class="year_number">2018</div>
                         <div class="number_wrap"></div>
                         <div class="number_around"></div>
@@ -180,11 +180,11 @@
                     </div>
                 </div>
             </div>
-            <div class="card_slide_block">
-                <div class="card_slide_wrap">
+            <div class="card_slide_block" data-type="tab" data-tab="item1">
+                <div class="card_slide_wrap" id="card_slide_wrap1">
                     <div class="card">
                         <div class="month">ИЮНЬ</div>
-                        <div class="name">Разработка идеи</div>
+                        <div class="name">Разработка идеи 1</div>
                         <div class="info"></div>
                         <div class="status done">ВЫПОЛНЕНО</div>
                     </div>
@@ -223,14 +223,50 @@
                         <div class="status inproc">ВЫПОЛНЕНО</div>
                     </div>
                     <div class="card">
-                        <div class="month">НОЯБРЬ - ПО НАШЕ ВРЕМЯ</div>
-                        <div class="name">Баунти
-                                программа</div>
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 1</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 1</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_slide_block" data-type="tab" data-tab="item2">
+                <div class="card_slide_wrap" id="card_slide_wrap2">
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 2</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Организация сообщества</div>
                         <div class="info">
-                            Организация
-                            работы волонтеров 
+                            Создан международный потребительский кооператив Цифровая Артель «Аграриум» 
+                        </div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮЛЬ - ПО НАШЕ ВРЕМЯ</div>
+                        <div class="name">Тестирование идеи</div>
+                        <div class="info">
+                            Тестирование идеи
+                            для развития 
                         </div>
                         <div class="status inproc">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">1 АВГУСТА</div>
+                        <div class="name">Создание
+                                рабочей группы</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
                     </div>
                     <div class="card">
                         <div class="month">НОЯБРЬ - ПО НАШЕ ВРЕМЯ</div>
@@ -243,14 +279,50 @@
                         <div class="status inproc">ВЫПОЛНЕНО</div>
                     </div>
                     <div class="card">
-                        <div class="month">НОЯБРЬ - ПО НАШЕ ВРЕМЯ</div>
-                        <div class="name">Баунти
-                                программа</div>
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 2</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 2</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_slide_block active" data-type="tab" data-tab="item3">
+                <div class="card_slide_wrap" id="card_slide_wrap3">
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 3</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Организация сообщества</div>
                         <div class="info">
-                            Организация
-                            работы волонтеров 
+                            Создан международный потребительский кооператив Цифровая Артель «Аграриум» 
+                        </div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮЛЬ - ПО НАШЕ ВРЕМЯ</div>
+                        <div class="name">Тестирование идеи</div>
+                        <div class="info">
+                            Тестирование идеи
+                            для развития 
                         </div>
                         <div class="status inproc">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">1 АВГУСТА</div>
+                        <div class="name">Создание
+                                рабочей группы</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
                     </div>
                     <div class="card">
                         <div class="month">НОЯБРЬ - ПО НАШЕ ВРЕМЯ</div>
@@ -263,6 +335,52 @@
                         <div class="status inproc">ВЫПОЛНЕНО</div>
                     </div>
                     <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 3</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 3</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_slide_block" data-type="tab" data-tab="item4">
+                <div class="card_slide_wrap" id="card_slide_wrap4">
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 4</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Организация сообщества</div>
+                        <div class="info">
+                            Создан международный потребительский кооператив Цифровая Артель «Аграриум» 
+                        </div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮЛЬ - ПО НАШЕ ВРЕМЯ</div>
+                        <div class="name">Тестирование идеи</div>
+                        <div class="info">
+                            Тестирование идеи
+                            для развития 
+                        </div>
+                        <div class="status inproc">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">1 АВГУСТА</div>
+                        <div class="name">Создание
+                                рабочей группы</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
                         <div class="month">НОЯБРЬ - ПО НАШЕ ВРЕМЯ</div>
                         <div class="name">Баунти
                                 программа</div>
@@ -273,15 +391,17 @@
                         <div class="status inproc">ВЫПОЛНЕНО</div>
                     </div>
                     <div class="card">
-                            <div class="month">НОЯБРЬ - ПО НАШЕ ВРЕМЯ</div>
-                            <div class="name">Баунти
-                                    программа</div>
-                            <div class="info">
-                                Организация
-                                работы волонтеров 
-                            </div>
-                            <div class="status inproc">ВЫПОЛНЕНО</div>
-                        </div>
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 4</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
+                    <div class="card">
+                        <div class="month">ИЮНЬ</div>
+                        <div class="name">Разработка идеи 4</div>
+                        <div class="info"></div>
+                        <div class="status done">ВЫПОЛНЕНО</div>
+                    </div>
                 </div>
             </div>
             <div class="econom_model">
@@ -508,7 +628,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/carousel.js"></script>
+        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
