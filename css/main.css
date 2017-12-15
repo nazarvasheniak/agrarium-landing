@@ -830,12 +830,30 @@ body{
     height: 34px;
     border-radius: 50%;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     position: relative;
 }
+.road_map_block .years_items .item .number:hover{
+    background: #eaedf6;
+}
+.road_map_block .years_items .item.active .pulse {
+    display: block;
+    border-radius: 50%;
+    background: #6600ff; /* Old browsers */
+    background: -moz-linear-gradient(top, #6600ff 0%, #3300cc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #6600ff 0%,#3300cc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #6600ff 0%,#3300cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6600ff', endColorstr='#3300cc',GradientType=0 );
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(51,0,204, 0.2);
+    animation: pulse 2s infinite;
+  }
+  .road_map_block .years_items .item.active  .pulse:hover {
+    animation: none;
+  }
 .road_map_block .years_items .item.active .number_around,
 .road_map_block .years_items .item.active .number_wrap{
-    visibility: visible;
+    /* visibility: visible; */
 }
 .road_map_block .years_items .item.active .year_number{
     font-size: 16px;
@@ -2615,3 +2633,34 @@ footer .soc_icon img{
         z-index: 1;
     }
 }
+
+
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(51,0,204, 0.2);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(51,0,204, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(51,0,204, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(51,0,204, 0.2);
+      box-shadow: 0 0 0 0 rgba(51,0,204, 0.2);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(51,0,204, 0);
+        box-shadow: 0 0 0 10px rgba(51,0,204, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(51,0,204, 0);
+        box-shadow: 0 0 0 0 rgba(51,0,204, 0);
+    }
+  }
+
+
+
