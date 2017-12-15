@@ -1,7 +1,11 @@
 // Carousel
 
 'use strict';
-
+$(document).ready(function(){
+    $('.menu_toggle').click(function(){
+        $('.menu').slideToggle();
+    });
+});
 /* var carousel = {
     container: document.querySelector('.card_slide_wrap'),
     itemwidth: 262,
