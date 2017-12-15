@@ -941,6 +941,7 @@ body{
         -ms-flex-align: start;
             align-items: flex-start;
     margin-right: 30px;
+    flex-shrink: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     -webkit-transition: 0.5s;
