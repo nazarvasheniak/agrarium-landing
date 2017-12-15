@@ -784,6 +784,7 @@ body{
         -ms-flex-align: center;
             align-items: center;
     position: relative;
+    cursor: pointer;
 }
 .road_map_block .years_items .item .year_number{
     line-height: 0.9;
@@ -915,6 +916,10 @@ body{
 .card_slide_block{
     margin-bottom:69px;
     position: relative;
+    display: none;
+}
+.card_slide_block.active {
+    display: block;
 }
 .card_slide_block:before{
     content: '';
