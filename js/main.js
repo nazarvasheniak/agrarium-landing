@@ -115,56 +115,43 @@ document.addEventListener('DOMContentLoaded', function() {
     var clientWidth = document.body.clientWidth;
     var teamWidth = document.querySelector('.team_people').offsetWidth;
 
-    //Swiper team
-    if(clientWidth <= teamWidth) {
-        document.querySelector('.team_people').style.cursor = 'move';
+    if(clientWidth <= 900) {
+        var consultantsSwiper = new Swiper('.consultants_block', {
+            centeredSlides: true,
+            width: 322,
+            spaceBetween: 30,
+            slidesPerView: 1,
+        });
 
         var teamSwiper = new Swiper('.team_block', {
-            
-            // Optional parameters
-            direction: 'horizontal',
-            width: 334,
-            loop: false,
-        })
-    }
+            centeredSlides: true,
+            width: 322,
+            spaceBetween: 30,
+            slidesPerView: 1,
+        });
 
-    //Swiper map
-    var mapSwiper = new Swiper('.card_slide_block', {
-        
-        // Optional parameters
-        direction: 'horizontal',
-        width: 334,
-        loop: false,
-    })
+        var mapSwiper = new Swiper('.card_slide_block', {
+            centeredSlides: true,
+            width: 262,
+            spaceBetween: 30,
+            slidesPerView: 1,
+        });
+    } else {
+        var consultantsSwiper = new Swiper('.consultants_block', {
+            centeredSlides: true,
+            width: 322,
+            spaceBetween: 30,
+            slidesPerView: 2,
+        });
 
-    //Swiper consultants
-    var consultantsSwiper = new Swiper('.consultants_block', {
-        
-        // Optional parameters
-        direction: 'horizontal',
-        width: 334,
-        loop: false,
-    })
-}, false)
-
-window.addEventListener('resize', function() {
-    var clientWidth = document.body.clientWidth;
-    var teamWidth = document.querySelector('.team_people').offsetWidth;
-
-    //Swiper team
-    if(clientWidth <= teamWidth) {
-        document.querySelector('.team_people').style.cursor = 'move';
-
-        var teamSwiper = new Swiper('.team_block', {
-            
-            // Optional parameters
-            direction: 'horizontal',
-            width: 334,
-            loop: false,
-        })
+        var mapSwiper = new Swiper('.card_slide_block', {
+            centeredSlides: true,
+            width: 262,
+            spaceBetween: 30,
+            slidesPerView: 2,
+        });
     }
 }, false)
-
 
 /* var init1 = new CarouselInit(document.querySelector('#card_slide_wrap1'))
 var init2 = new CarouselInit(document.querySelector('#card_slide_wrap2'))
