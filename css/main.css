@@ -2657,5 +2657,12 @@ footer .soc_icon img{
     }
   }
 
+.swiper-wrapper:hover {
+    cursor: move;
+}
+
+.swiper-slide {
+    width: 262px !important;
+}
 
 

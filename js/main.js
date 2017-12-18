@@ -108,7 +108,70 @@ var CarouselInit = function(container) {
     }
 }
 
-var init1 = new CarouselInit(document.querySelector('#card_slide_wrap1'))
+
+
+//Swiper team
+document.addEventListener('DOMContentLoaded', function() {
+    var clientWidth = document.body.clientWidth;
+    var teamWidth = document.querySelector('.team_people').offsetWidth;
+
+    //Swiper team
+    if(clientWidth <= teamWidth) {
+        var teamSwiper = new Swiper('.team_block', {
+            
+            // Optional parameters
+            direction: 'horizontal',
+            width: 334,
+            loop: false,
+        })
+    }
+
+    //Swiper map
+    var mapSwiper = new Swiper('.card_slide_block', {
+        
+        // Optional parameters
+        direction: 'horizontal',
+        width: 334,
+        loop: false,
+    })
+
+    //Swiper consultants
+    var consultantsSwiper = new Swiper('.consultants_block', {
+        
+        // Optional parameters
+        direction: 'horizontal',
+        width: 334,
+        loop: false,
+    })
+
+    //Swiper consultants
+    var consultantsSwiper = new Swiper('.consultants_block', {
+        
+        // Optional parameters
+        direction: 'horizontal',
+        width: 334,
+        loop: false,
+    })
+}, false)
+
+window.addEventListener('resize', function() {
+    var clientWidth = document.body.clientWidth;
+    var teamWidth = document.querySelector('.team_people').offsetWidth;
+
+    //Swiper team
+    if(clientWidth <= teamWidth) {
+        var teamSwiper = new Swiper('.team_block', {
+            
+            // Optional parameters
+            direction: 'horizontal',
+            width: 334,
+            loop: false,
+        })
+    }
+}, false)
+
+
+/* var init1 = new CarouselInit(document.querySelector('#card_slide_wrap1'))
 var init2 = new CarouselInit(document.querySelector('#card_slide_wrap2'))
 var init3 = new CarouselInit(document.querySelector('#card_slide_wrap3'))
 var init4 = new CarouselInit(document.querySelector('#card_slide_wrap4'))
@@ -118,7 +181,7 @@ init3.init();
 init4.init();
 
 var consultants = new CarouselInit(document.querySelector('#consultants_cards'))
-consultants.init();
+consultants.init(); */
 
 //Таймер
 function countDown(second,endMinute,endHour,endDay,endMonth,endYear) {
