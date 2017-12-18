@@ -110,13 +110,15 @@ var CarouselInit = function(container) {
 
 
 
-//Swiper team
+//Swiper
 document.addEventListener('DOMContentLoaded', function() {
     var clientWidth = document.body.clientWidth;
     var teamWidth = document.querySelector('.team_people').offsetWidth;
 
     //Swiper team
     if(clientWidth <= teamWidth) {
+        document.querySelector('.team_people').style.cursor = 'move';
+
         var teamSwiper = new Swiper('.team_block', {
             
             // Optional parameters
@@ -143,15 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
         width: 334,
         loop: false,
     })
-
-    //Swiper consultants
-    var consultantsSwiper = new Swiper('.consultants_block', {
-        
-        // Optional parameters
-        direction: 'horizontal',
-        width: 334,
-        loop: false,
-    })
 }, false)
 
 window.addEventListener('resize', function() {
@@ -160,6 +153,8 @@ window.addEventListener('resize', function() {
 
     //Swiper team
     if(clientWidth <= teamWidth) {
+        document.querySelector('.team_people').style.cursor = 'move';
+
         var teamSwiper = new Swiper('.team_block', {
             
             // Optional parameters
