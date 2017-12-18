@@ -1,3 +1,6 @@
+// Carousel
+
+'use strict';
 // Years
 var Tabs = {
     toggle: document.querySelectorAll('.years_items .item'),
@@ -70,7 +73,7 @@ var CarouselInit = function(container) {
 
     this.pos = 0;
     this.maxpos = -(((carousel.itemwidth + carousel.margin) * container.children.length) - ((carousel.itemwidth + carousel.margin) * 5));
-    console.log(this);
+    
 
     this.getPos = function() {
         return this.pos;
@@ -101,7 +104,7 @@ var CarouselInit = function(container) {
                 /* console.log(this.pos);
                 console.log(this.maxpos); */
             }
-        }, 2000)
+        }, 3000)
     }
 }
 
@@ -113,3 +116,63 @@ init1.init();
 init2.init();
 init3.init();
 init4.init();
+
+var consultants = new CarouselInit(document.querySelector('#consultants_cards'))
+consultants.init();
+
+//Таймер
+function countDown(second,endMinute,endHour,endDay,endMonth,endYear) {
+    var now = new Date();
+    second = (arguments.length == 1) ? second + now.getSeconds() : second;
+    endYear =  typeof(endYear) != 'undefined' ?  endYear : now.getFullYear();            
+    endMonth = endMonth ? endMonth - 1 : now.getMonth();  //номер месяца начинается с 0   
+    endDay = typeof(endDay) != 'undefined' ? endDay :  now.getDate();    
+    endHour = typeof(endHour) != 'undefined' ?  endHour : now.getHours();
+    endMinute = typeof(endMinute) != 'undefined' ? endMinute : now.getMinutes();   
+    //добавляем секунду к конечной дате (таймер показывает время уже спустя 1с.) 
+    var endDate = new Date(endYear,endMonth,endDay,endHour,endMinute,second+1); 
+    var interval = setInterval(function() { //запускаем таймер с интервалом 1 секунду
+        var time = endDate.getTime() - now.getTime();
+        if (time < 0) {                      //если конечная дата меньше текущей
+            clearInterval(interval);
+            alert("Неверная дата!");            
+        } else {            
+            var days = Math.floor(time / 864e5);
+            var hours = Math.floor(time / 36e5) % 24; 
+            var minutes = Math.floor(time / 6e4) % 60;
+            var seconds = Math.floor(time / 1e3) % 60;  
+            document.getElementById('value_day').innerHTML = days;
+            document.getElementById('value_hour').innerHTML = hours;
+            document.getElementById('value_min').innerHTML = minutes;
+            document.getElementById('value_sec').innerHTML = seconds;
+            if (!seconds && !minutes && !days && !hours) { 
+                clearInterval(interval);
+            }           
+        }
+        now.setSeconds(now.getSeconds() + 1); //увеличиваем текущее время на 1 секунду
+    }, 1000);
+    }
+    countDown(0,0,24,31);//отсчет идет до нового года(31 день 24 часа)
+
+
+    $('.menu_toggle').click(function(){
+        $('.menu').slideToggle().css('display','flex');
+    });
+    
+	var h = $(window).height();
+    $(window).scroll(function(){
+    if ( ($(this).scrollTop()+h) >= $(".bottom_content .cost_block .items .item").offset().top) {
+        $(".bottom_content .cost_block .items .item1").fadeIn(750,
+        function(){
+            $(".bottom_content .cost_block .items .item2").fadeIn(750,
+                function(){
+                    $(".bottom_content .cost_block .items .item3").fadeIn(750);
+                });
+        });
+    }
+    });
+    $('.play_btn').click(function(){
+        $(this,).fadeOut();
+        $('.video_preview').fadeOut();
+        $('.video_wrap').append('<iframe width="560" height="377" src="https://www.youtube.com/embed/Hi-CTlR3YxA?autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen class="ytube_video"></iframe> ');
+    });
